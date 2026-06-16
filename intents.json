@@ -1,0 +1,316 @@
+[
+    {
+        "tag": "greeting",
+        "patterns": ["Hai"],
+        "responses": ["Halo! Ada yang bisa saya bantu?"]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": ["Dadah"],
+        "responses": ["Selamat tinggal! Jika ada pertanyaan lain"]
+    },
+    {
+        "tag": "thanks",
+        "patterns": ["Makasih"],
+        "responses": ["Sama-sama! Jika ada yang perlu ditanyakan, beri tahu saja."]
+    },
+    {
+        "tag": "default",
+        "patterns": ["say"],
+        "responses": ["Maaf, saya tidak mengerti pertanyaan tersebut. Bisakah Anda memberikan pertanyaan lain?"]
+    },
+    {
+        "tag": "berijalan",
+        "patterns": ["apa itu berijalan"],
+        "responses": ["Berijalan adalah lini usaha layanan digital ACC yang dioperasikan oleh PT Cipta Sedaya Digital Indonesia (CSDI). Kunjungi [berijalan.co.id](https://berijalan.co.id) untuk informasi lebih lanjut."],
+        "followUpIntents": [
+            {
+                "tag": "cara_menjadi_mitra",
+                "patterns": ["Menjadi mitra Berijalan"],
+                "responses": ["Untuk menjadi mitra Berijalan, Anda dapat mengunjungi [berijalan.co.id](https://berijalan.co.id) klik pada menu Karir untuk informasi lebih lanjut."],
+                "followUpIntents": []
+            },
+            {
+                "tag": "layanan_berijalan",
+                "patterns": ["Jenis layanan"],
+                "responses": ["Berijalan menyediakan layanan digital seperti operation, telephony, dan technology. Kunjungi [berijalan.co.id/layanan](https://berijalan.co.id/layanan) untuk rincian lebih lanjut."],
+                "followUpIntents": []
+            },
+            {
+                "tag": "keunggulan_berijalan",
+                "patterns": ["Apa keunggulan Berijalan"],
+                "responses": ["Keunggulan Berijalan Kemampuan untuk menangani pelanggan dari awal hingga akhir di lokasi yang terpusat, Berpengalaman dalam mengelola pelanggan di bidang keuangan dan leasing, Menghadirkan sistem dan teknologi untuk mengakomodasi customer journey yang holistik, Tim yang unggul dengan budaya yang baik untuk memberikan layanan terbaik bagi kepuasan pelanggan."],
+                "followUpIntents": [] 
+            }
+        ]
+    },
+    {
+        "tag": "profil",
+        "patterns": ["Profil Berijalan"],
+        "responses": ["berijalan fokus untuk memberikan layanan solutif dan inovatif melalui kolaborasi terbaik demi mendukung keberhasilan bisnis."],
+        "followUpIntents": [
+            {
+                "tag": "value_berijalan",
+                "patterns": ["Value"],
+                "responses": ["Berijalan hadir untuk memudahkan dan menyempurnakan setiap proses bisnis melalui layanan Operations Center, Telephony Center dan Techno Center. Berijalan siap memberikan pelayanan dan solusi berbasis digital dengan mutu terbaik yang dapat dikostumisasi sesuai kebutuhan di masa depan."],
+                "followUpIntents": []
+            },
+            {
+                "tag": "brandstory_berijalan",
+                "patterns": ["Brand Story"],
+                "responses": ["Brand story yang dimiliki oleh berijalan, yaitu: Solution Ways, Sparks of Innovations, dan Collaboration."],
+                "followUpIntents": []
+            },
+            {
+                "tag": "visinmisi_berijalan",
+                "patterns": ["Visi dan Misi berijalan"],
+                "responses": ["Visi Kami:\nMenjadi perusahaan jasa dan transformasi digital global yang kompetitif. Misi Kami:\nMembantu pelanggan menjalankan bisnis secara efisien melalui layanan dan solusi teknologi yang tangguh dengan memberdayakan talenta lokal."],
+                "followUpIntents": [] 
+            },
+            {
+                "tag": "kebijakan_berijalan",
+                "patterns": ["Kebijakan Mutu berijalan"],
+                "responses": ["Memiliki 4 Kebijakan Mutu: Integrity, Teamwork, Quality, dan Costumer Satisfaction"],
+                "followUpIntents": [] 
+            }
+        ]
+    },
+    {
+        "tag": "kritiksaran",
+        "patterns": ["Kritik & Saran"],
+        "responses": ["Kritik dan saran bisa diberikan melalui https://care.berijalan.co.id/"],
+        "followUpIntents": [
+            {
+                "tag": "caraberikan_berijalan",
+                "patterns": ["Cara Memberikan Kritik dan Saran"],
+                "responses": ["Buka link https://care.berijalan.co.id/ lalu pilih open new ticket"],
+                "followUpIntents": []
+            }
+        ]
+    },
+    {
+        "tag": "jamoperasional",
+        "patterns": ["Jam Operasional"],
+        "responses": ["Berijalan memiliki 2 cabang office."],
+        "followUpIntents": [
+            {
+                "tag": "mrican_berijalan",
+                "patterns": ["Berijalan Office"],
+                "responses": ["Berijalan Office: Senin - Jum'at: 08.00 - 16.00 WIB"],
+                "followUpIntents": []
+            },
+            {
+                "tag": "petung_berijalan",
+                "patterns": ["Cara Memberikan Kritik dan Saran"],
+                "responses": ["Buka link https://care.berijalan.co.id/ lalu pilih open new ticket"],
+                "followUpIntents": []
+            }
+        ]
+    },
+    {
+        "tag": "klien",
+        "patterns": ["Klien"],
+        "responses": ["Klien Kami terdiri atas: PT Astra Financial, PT Astra Sedaya Finance, PT Astra Auto Digital, PT Astra Kreasi Digital, PT Astra Integrasi Digital, PT Asuransi Ramayana, PT Pratama Sadya Sadana, Bank Jasa Jakarta, Dana Pensiun Astra."],
+        "followUpIntents": [
+            {
+                "tag": "sales_berijalan",
+                "patterns": ["Hubungi Sales & Marketing"],
+                "responses": [" Anda dapat mengubungi tim kami melalui email support@care.berijalan.co.id, lalu tulis detail deskripsi pengajuan dan kirim email"],
+                "followUpIntents": []
+            },
+            {
+                "tag": "partner_berijalan",
+                "patterns": ["Partnership"],
+                "responses": ["Hubungi Berijalan melalui care.berijalan.co.id, pilih topic yang sesuai, atau email ke support@care.berijalan.co.id. Tulis deskripsi pengajuan partnership, tunggu respon untuk detail SOP dan dokumen perjanjian melalui kontak Whatsapp kami."],
+                "followUpIntents": []
+            }
+        ]
+    },
+    {
+        "tag": "konsultasiproduks",
+        "patterns": ["Konsultasi Produk"],
+        "responses": ["Product / service di berijalan dapat diskalakan sehingga cocok dengan kebutuhan perusahaan. Jika Anda ingin membahas lebih lanjut, Anda dapat menjadwalkan konsultasi dengan tim sales & marketing dengan membuat ticket. Harap tentukan rincian kebutuhan Anda, sehingga kami dapat memberikan informasi yang tepat untuk Anda."],
+        "followUpIntents": [
+            {
+                "tag": "sales_berijalan",
+                "patterns": ["Hubungi Sales & Marketing"],
+                "responses": [" Anda dapat mengubungi tim kami melalui email support@care.berijalan.co.id, lalu tulis detail deskripsi pengajuan dan kirim email"],
+                "followUpIntents": []
+            }
+        ]
+    },
+    {
+        "tag": "keunggulan",
+        "patterns": ["Keunggulan"],
+        "responses": ["Keunggulan Berijalan Kemampuan untuk menangani pelanggan dari awal hingga akhir di lokasi yang terpusat, Berpengalaman dalam mengelola pelanggan di bidang keuangan dan leasing, Menghadirkan sistem dan teknologi untuk mengakomodasi customer journey yang holistik, Tim yang unggul dengan budaya yang baik untuk memberikan layanan terbaik bagi kepuasan pelanggan."],
+        "followUpIntents": []
+    },
+    {
+        "tag": "gabung",
+        "patterns": ["Cara Bergabung"],
+        "responses": ["Cara mendaftar pekerjaan di Berijalan: Kunjungi web berijalan.co.id, Klik menu Karir dan pilih posisi yang ingin dituju, Baca deskripsi pekerjaan & kualifikasi, klik \"apply now\", Selanjutnya Anda akan diarahkan untuk membuat akun dan melengkapi data di formulir, Setelah menyelesaikan proses, tunggu pihak recruiter menghubungi Anda melalui WhatsApp, Setelah konfirmasi panggilan, Anda dapat mengikuti tahap recruitment sesuai dengan kualifikasi perusahaan."],
+        "followUpIntents": [
+            {
+                "tag": "tema_berijalan",
+                "patterns": ["Mitra Tema"],
+                "responses": ["Mitra TEMA: Untuk informasi lebih lanjut dan langkah bergabung, kunjungi https://career.acc.co.id/ACCRedBerries/JobDetail?JobId=1827"],
+                "followUpIntents": []
+            },
+            {
+                "tag": "rvo_berijalan",
+                "patterns": ["Mitra RVO"],
+                "responses": ["Mitra RVO: Untuk informasi lebih lanjut dan langkah bergabung, kunjungi https://career.acc.co.id/ACCRedBerries/JobDetail?JobId=899"],
+                "followUpIntents": []
+            },
+            {
+                "tag": "sbpv_berijalan",
+                "patterns": ["MiTRA SBPV"],
+                "responses": ["Mitra SBPV: Untuk informasi lebih lanjut dan langkah bergabung, kunjungi https://career.acc.co.id/ACCRedBerries/JobDetail?JobId=69"],
+                "followUpIntents": [] 
+            },
+            {
+                "tag": "aav_berijalan",
+                "patterns": ["Mitra AVV GC"],
+                "responses": ["Mitra AAV: Untuk informasi lebih lanjut dan langkah bergabung, kunjungi https://career.acc.co.id/ACCRedBerries/JobDetail?JobId=68"],
+                "followUpIntents": [] 
+            },
+            {
+                "tag": "delta_berijalan",
+                "patterns": ["Mitra Delta"],
+                "responses": ["Mitra Delta: Untuk informasi lebih lanjut dan langkah bergabung, kunjungi https://career.acc.co.id/ACCRedBerries/JobDetail?JobId=2324"],
+                "followUpIntents": [] 
+            }
+        ]
+    },
+    {
+        "tag": "syarat",
+        "patterns": ["S & K"],
+        "responses": ["Karena kebutuhan operasional maka syarat dan ketetntuan juga berbeda."],
+        "followUpIntents": [
+            {
+                "tag": "operation_berijalan",
+                "patterns": ["Operation & Telephony"],
+                "responses": ["Syarat dan Ketentuan: Calon Mitra harus memiliki KTP, Bersedia belajar dan dilatih oleh tenaga profesional, Mitra berhak memilih jadwal slot kerja (1 slot : 4 jam kerja), Mendapatkan benefit dari akumulasi slot kerja yang diambil, Lokasi kerja di Mrican, Yogyakarta (Work from Office), Berkesempatan mendapatkan sertifikat pekerjaan, Tidak terikat status karyawan, Memiliki alasan yang kuat untuk bekerja dan berkeinginan untuk berhasil."],
+                "followUpIntents": []
+            },
+            {
+                "tag": "tech_berijalan",
+                "patterns": ["Technocenter"],
+                "responses": ["Syarat Ketentuan: Program studi Teknik Informatika, Sistem Informasi, atau jurusan lainnya di bidang Teknologi. Diutamakan berdomisili atau berkuliah di Yogyakarta."],
+                "followUpIntents": []
+            }
+        ]
+    },
+    {
+        "tag": "sistemkerja",
+        "patterns": ["Sistem Kerja"],
+        "responses": ["Sistem kerjanya sangat fleksibel, memungkinkan Anda untuk menyesuaikan jadwal kerja sesuai kebutuhan."],
+        "followUpIntents": [
+            {
+                "tag": "sktema_berijalan",
+                "patterns": ["TEMA"],
+                "responses": ["Berkomunikasi dengan pelanggan yang sudah ada untuk memilih produk yang sesuai dan dibutuhkan."],
+                "followUpIntents": []
+            },
+            {
+                "tag": "skrvo_berijalan",
+                "patterns": ["RVO"],
+                "responses": ["Melakukan penginputan data calon pelanggan."],
+                "followUpIntents": []
+            },
+            {
+                "tag": "sksbpv_berijalan",
+                "patterns": ["SBPV"],
+                "responses": ["Melakukan peninjauan calon pelanggan melalui panggilan telepon atau video"],
+                "followUpIntents": [] 
+            },
+            {
+                "tag": "skaav_berijalan",
+                "patterns": ["AVV GC"],
+                "responses": ["Melakukan verifikasi data dan asset pelanggan "],
+                "followUpIntents": [] 
+            },
+            {
+                "tag": "skdelta_berijalan",
+                "patterns": ["Delta"],
+                "responses": ["Membantu dan mengingatkan  pelanggan dalam melakukan transaksi pembayaran."],
+                "followUpIntents": [] 
+            }
+        ]
+    },
+    {
+        "tag": "produklayanan",
+        "patterns": ["Apa saja produk atau layanan yang ditawarkan?"],
+        "responses": ["berijalan memiliki 3 produk dan layanan diantaranya Operation Center, Telephony Center, dan Technocenter."],
+        "followUpIntents": [
+            {
+                "tag": "operation_center",
+                "patterns": ["Operation Center"],
+                "responses": ["Membantu bisnis untuk menjalankan pemrosesan kredit secara lebih cepat dan standar melalui indikator terukur sesuai dengan pertimbangan risiko bisnis"],
+                "followUpIntents": []
+            },
+            {
+                "tag": "telephony_center",
+                "patterns": ["Telephony Center"],
+                "responses": ["Membantu bisnis untuk menjangkau pelanggan dan calon pelanggan mereka dengan lebih efisien melalui sistem yang terintegrasi."],
+                "followUpIntents": []
+            },
+            {
+                "tag": "techno_center",
+                "patterns": ["Techno Center"],
+                "responses": ["Membantu bisnis untuk mendigitalisasi proses bisnis dengan menyediakan layanan desain, pengembangan, dan pengujian."],
+                "followUpIntents": [] 
+            }
+        ]
+    },
+    {
+        "tag": "kegiatan",
+        "patterns": ["Kegiatan apa saja yang ada di berijalan?"],
+        "responses": ["Banyak sekali kegiatan yang diselenggarakan secara rutin oleh berijalan."],
+        "followUpIntents": [
+            {
+                "tag": "corporate",
+                "patterns": ["CSR"],
+                "responses": ["Merupakan kegiatan rutin yang menjadi bentuk realisasi antara corporate ddan masyarakat"],
+                "followUpIntents": []
+            },
+            {
+                "tag": "gmpr",
+                "patterns": ["GAME-PAR"],
+                "responses": ["Merupakan kegiatan Game Pemersatu Antar Mitra dan Karyawan berijalan"],
+                "followUpIntents": []
+            },
+            {
+                "tag": "festival",
+                "patterns": ["berijalan festival"],
+                "responses": ["Merupakan kegiatan rutin tahunan yang diselenggarakan untuk memberikan apresiasi kepada mitra berijalan silahkan klik link ini untuk informasi lebih lanjut."],
+                "followUpIntents": [] 
+            }
+        ]
+    },
+    {
+        "tag": "format",
+        "patterns": ["Bagaimana mengajukan izin?"],
+        "responses": ["Silahkan pilih izin yang diperlukan untuk melakuakan konformasi ke TL"],
+        "followUpIntents": [
+            {
+                "tag": "Izin",
+                "patterns": ["Izin Kepentingan Pribadi"],
+                "responses": ["Kirim Ke Whatsappp Admin dengan format engirimkan izin dengan format izin yang sudah ada seperti berikut ini: NAMA MITRA,  Pengganti untuk (NAMA TIM), Hari/tanggal : Slot :, Alasan : , Nama Pengganti : "],
+                "followUpIntents": []
+            },
+            {
+                "tag": "cancelation",
+                "patterns": ["Cancelation Slot"],
+                "responses": ["Kirim Ke Whatsappp Admin dengan format engirimkan izin dengan format izin yang sudah ada seperti berikut ini: NAMA MITRA,  Pengganti untuk (NAMA TIM), Hari/tanggal : Slot :, Alasan : , Nama Pengganti : "],
+                "followUpIntents": []
+            },
+            {
+                "tag": "sakit",
+                "patterns": ["Izin Sakit"],
+                "responses": ["Kirim Ke Whatsappp Admin dengan format engirimkan izin dengan format izin yang sudah ada seperti berikut ini: NAMA MITRA,  Pengganti untuk (NAMA TIM), Hari/tanggal : Slot :, Alasan : , Nama Pengganti : "],
+                "followUpIntents": [] 
+            }
+        ]
+    }
+]

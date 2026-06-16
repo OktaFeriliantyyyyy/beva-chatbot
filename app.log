@@ -1,0 +1,8 @@
+WARNING:flask_cors.core:Unknown option passed to Flask-CORS: headers
+DEBUG:h5py._conv:Creating converter from 5 to 3
+DEBUG:h5py._conv:Creating converter from 3 to 5
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 10:22:01] "OPTIONS /connect HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 10:22:01] "[35m[1mPOST /connect HTTP/1.1[0m" 500 -

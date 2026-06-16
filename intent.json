@@ -1,0 +1,207 @@
+﻿[
+	{
+		"tag": "greeting",
+		"patterns": ["Hai"],
+		"responses": ["Halo! Ada yang bisa saya bantu?"]
+	},
+	{
+		"tag": "goodbye",
+		"patterns": ["Dadah"],
+		"responses": ["Selamat tinggal! Jika ada pertanyaan lain"]
+	},
+	{
+		"tag": "thanks",
+		"patterns": ["Makasih"],
+		"responses": ["Sama-sama! Jika ada yang perlu ditanyakan, beri tahu saja."]
+	},
+	{
+		"tag": "default",
+		"patterns": ["say"],
+		"responses": ["Maaf, saya tidak mengerti pertanyaan tersebut. Bisakah Anda memberikan pertanyaan lain?"]
+	},
+	{
+        "tag": "berijalan",
+        "patterns": ["beri tahu saya tentang berijalan"],
+        "responses": ["Berijalan adalah lini usaha layanan digital ACC yang dioperasikan oleh PT Cipta Sedaya Digital Indonesia (CSDI). Kunjungi [berijalan.co.id](https://berijalan.co.id) untuk informasi lebih lanjut."]
+    },
+    {
+        "tag": "tentang_berijalan",
+        "patterns": ["apa itu berijalan"],
+        "responses": ["Berijalan adalah lini usaha layanan digital ACC yang dioperasikan oleh PT Cipta Sedaya Digital Indonesia (CSDI). Kunjungi [berijalan.co.id](https://berijalan.co.id) untuk informasi lebih lanjut."]
+    },
+    {
+        "tag": "maka_berijalan",
+        "patterns": ["Apa saja fungsi yang ada di berijalan?"],
+        "responses": ["Berijalan memiliki berbagai fungsi layanan digital ACC di bawah naungan PT Cipta Sedaya Digital Indonesia (CSDI). Pelajari lebih lanjut di [berijalan.co.id/fungsi](https://berijalan.co.id/fungsi)."]
+    },
+    {
+        "tag": "profil_berijalan",
+        "patterns": ["Bagaimana berijalan beroperasi?"],
+        "responses": ["Berijalan dioperasikan dengan menghadirkan layanan digital ACC yang dikelola oleh PT Cipta Sedaya Digital Indonesia (CSDI). Untuk informasi detil, kunjungi [berijalan.co.id/profil](https://berijalan.co.id/profil)."]
+    },
+    {
+        "tag": "about_berijalan",
+        "patterns": ["Berikan penjelasan lebih lanjut mengenai berijalan"],
+        "responses": ["Berijalan adalah lini usaha layanan digital ACC di bawah anak usahanya PT Cipta Sedaya Digital Indonesia (CSDI). Pelajari lebih lanjut di [berijalan.co.id/tentang](https://berijalan.co.id/tentang)."]
+    },
+	{
+		"tag": "delta",
+		"patterns": ["Apa yang dimaksud dengan delta"],
+		"responses": ["Kamu bisa mendapatkan informasi tentang delta di sini"]
+	},
+	{
+	"tag": "del",
+	"patterns": ["Berikan informasi tentang delta"],
+	"responses": ["Kamu bisa mendapatkan informasi tentang delta di sini"]
+	},
+	{
+	"tag": "ta",
+	"patterns": ["Jelaskan delta"],
+	"responses": ["Kamu bisa mendapatkan informasi tentang delta di sini"]
+	},
+	{
+	"tag": "tema",
+	"patterns": ["Apa yang dimaksud dengan tema"],
+	"responses": ["Tema adalah"]
+	},
+	{
+	"tag": "tentang_tema",
+	"patterns": ["Berikan informasi tentang tema"],
+	"responses": ["Tema adalah"]
+	},
+	{
+	"tag": "tem",
+	"patterns": ["Jelaskan tema"],
+	"responses": ["Tema adalah"]
+	},
+	{
+	"tag": "rvo",
+	"patterns": ["Apa yang dimaksud dengan rvo"],
+	"responses": ["Rvo adalah"]
+	},
+	{
+	"tag": "tentang_rvo",
+	"patterns": ["Berikan informasi tentang rvo"],
+	"responses": ["Rvo adalah"]
+	},
+	{
+	"tag": "rv",
+	"patterns": ["Jelaskan rvo"],
+	"responses": ["Rvo adalah"]
+	},
+	{
+	"tag": "sbpv",
+	"patterns": ["Apa yang dimaksud dengan SBPV"],
+	"responses": ["SBPV adalah"]
+	},
+	{
+	"tag": "tentang_sbpv",
+	"patterns": ["Berikan informasi tentang SBPV"],
+	"responses": ["SBPV adalah"]
+	},
+	{
+	"tag": "byphonevideo",
+	"patterns": ["Jelaskan SBPV"],
+	"responses": ["SBPV adalah"]
+	},
+	{
+	"tag": "aavgc",
+	"patterns": ["Apa yang dimaksud dengan AAVGC"],
+	"responses": ["AAVGC adalah"]
+	},
+	{
+	"tag": "tentang_aavgc",
+	"patterns": ["Berikan informasi tentang AAVGC"],
+	"responses": ["AAVGC adalah"]
+	},
+	{
+	"tag": "aav",
+	"patterns": ["Jelaskan AAVGC"],
+	"responses": ["AAVGC adalah"]
+	},
+	{
+	"tag": "opccent",
+	"patterns": ["operation center"],
+	"responses": ["operation center adalah"]
+	},
+	{
+	"tag": "tepcent",
+	"patterns": ["Berikan informasi telephony center"],
+	"responses": ["telephony center adalah"]
+	},
+	{
+	"tag": "techno",
+	"patterns": ["Jelaskan techno center"],
+	"responses": ["techno center adalah"]
+	},
+	{
+	"tag": "visi",
+	"patterns": ["visi berijalan"],
+	"responses": ["visi beriijalan"]
+	},
+	{
+	"tag": "misi",
+	"patterns": ["misi berijalan"],
+	"responses": ["misi beriijalan"]
+	},
+	{
+	"tag": "visimisi",
+	"patterns": ["visimisi berijalan"],
+	"responses": ["visimisi beriijalan"]
+	},
+	{
+	"tag": "pilar",
+	"patterns": ["3 pilar bisnis berijalan"],
+	"responses": ["3 pilar bisnis berijalan terdiri"]
+	},
+	{
+	"tag": "brandstory",
+	"patterns": ["brand story berijalan"],
+	"responses": ["brand story berijalan terdiri"]
+	},
+	{
+	"tag": "value",
+	"patterns": ["value sharing berijalan"],
+	"responses": ["value sharing berijalan terdiri"]
+	},
+	{
+	"tag": "SK",
+	"patterns": ["SK"],
+	"responses": ["SK adalah"]
+	},
+	{
+	"tag": "sistem_kerja",
+	"patterns": ["sistem kerja"],
+	"responses": ["sistem kerja"]
+	},
+	{
+	"tag": "klien",
+	"patterns": ["klien"],
+	"responses": ["klien dari berijalan"]
+	},
+	{
+	"tag": "konsultasi_produk",
+	"patterns": ["konsultasi produk"],
+	"responses": ["konsultasi produk dengan berijalan"]
+	},
+	{
+	"tag": "keunggulan",
+	"patterns": ["keunggulan berijalan"],
+	"responses": ["keunggulan dari berijalan"]
+	},
+	{
+	"tag": "kritiksaran",
+	"patterns": ["kritik saran berijalan"],
+	"responses": ["apabila ingin mengirim kritik saran ke berijalan"]
+	},
+	{
+	"tag": "jam",
+	"patterns": ["jam operasional berijalan"],
+	"responses": ["Jam operasional berijallan setiap hari"]
+	},
+	{
+	"tag": "alamat",
+	"patterns": ["alamat berijalan"],
+	"responses": ["alamat berijalan office daan berijalan techno"]
+	}
+]

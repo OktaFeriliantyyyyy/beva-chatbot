@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b88489ff.css",
+    "main.js": "/static/js/main.87b0542b.js",
+    "static/js/787.7a6218dc.chunk.js": "/static/js/787.7a6218dc.chunk.js",
+    "static/media/mockup.png": "/static/media/mockup.0c9f5b44d189cd0c106d.png",
+    "static/media/Neo Sans Std Bold.otf": "/static/media/Neo Sans Std Bold.67db0123eb18e7519fa9.otf",
+    "static/media/Neo Sans Std Regular.otf": "/static/media/Neo Sans Std Regular.2471eb6e4b9420a802b1.otf",
+    "static/media/Neo Sans Std Light.otf": "/static/media/Neo Sans Std Light.4558b57f8958e4783fc4.otf",
+    "index.html": "/index.html",
+    "main.b88489ff.css.map": "/static/css/main.b88489ff.css.map",
+    "main.87b0542b.js.map": "/static/js/main.87b0542b.js.map",
+    "787.7a6218dc.chunk.js.map": "/static/js/787.7a6218dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b88489ff.css",
+    "static/js/main.87b0542b.js"
+  ]
+}
