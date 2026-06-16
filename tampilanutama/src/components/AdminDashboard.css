@@ -1,0 +1,21 @@
+/* DataCard.css */
+
+.data-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .data-card-description {
+    font-size: 14px;
+    color: #555;
+  }
+  

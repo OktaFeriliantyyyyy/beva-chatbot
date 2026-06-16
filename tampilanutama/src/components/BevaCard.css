@@ -1,0 +1,628 @@
+@font-face {font-family: "Neo Sans Std Bold";
+src: url("Neo\ Sans\ Std\ Bold.otf") format("opentype"); /* Path relatif ke akar proyek */
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face {
+font-family: "Neo Sans Std Regular";
+src: url("Neo\ Sans\ Std\ Regular.otf") format("opentype"); /* Path relatif ke akar proyek */
+font-weight: regular;
+font-style: normal;
+}
+
+@font-face {
+font-family: "Neo Sans Std Light";
+src: url("Neo\ Sans\ Std\ Light.otf") format("opentype"); /* Path relatif ke akar proyek */
+font-weight: light;
+font-style: normal;
+}
+
+.beva-card {
+  font-family: "Neo Sans Std Bold", sans-serif;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  height: 1450px;
+  margin: 20px;
+  position: fixed;
+  top: 480px;
+  bottom: 0px;
+  right: 40px;
+  left: 950px;
+  border-radius: 40px;
+  background-color: #fff;
+  ;
+}
+
+
+
+/* Tambahkan CSS untuk kelas hide-card */
+.hide-card {
+  opacity: 0; /* Sembunyikan dengan mengubah opacity menjadi 0 */
+  pointer-events: none; /* Nonaktifkan interaksi dengan elemen yang tersembunyi */
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+}
+
+.card-image {
+  width: 70px;
+  height: 70px;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.card-image1 {
+  display: block;
+  margin-bottom: 10px; /* Mengatur margin secara otomatis untuk mengalign gambar ke tengah */
+  width: 180px;
+  height:180px;
+}
+
+.card-image2 {
+  width: 40px;
+  height: 40px;
+  margin-top: -43px;
+  margin-left: -220px;
+}
+
+.card-image3 {
+  width: 40px;
+  height: 40px;
+  margin-top: -43px;
+  margin-left: -280px;
+}
+
+
+.close-icon{
+  width: 45px;
+  height: 45px;
+  margin-top: -13px;
+  margin-left: 220px;
+}
+
+.card-title {
+  font-family: "Neo Sans Std Regular", sans-serif;
+  font-size: 16px;
+  margin-top: -10px;
+  margin-right:6px;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.card {
+  padding: 20px;
+  width: 250px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  left: 930px;
+  border-radius: 15px;
+  background: linear-gradient( #00C7B1 13%, #fff 10%);
+  background-clip: inherit; /* Hanya warna latar belakang untuk bagian atas */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chatbot {
+  padding: 1px;
+  margin-top: 39px;
+  margin-bottom: 30px;
+  flex: 1; /* Biarkan Chatbot mengisi semua ruang yang tersedia di dalam card */
+  overflow-y: auto; /* Tambahkan scroll jika pesan terlalu banyak */
+  width: 110%;
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.start-chat-button {
+  background-color: #002D72;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.start-chat-button:hover {
+  background-color:  #78D64B  ;
+}
+
+.hide-image {
+  display: none;
+}
+
+.form-group {
+  position: relative;
+  width: 150px;
+}
+
+.input-description {
+  margin-left: -30px;
+  text-align: center;
+  font-size: 10px;
+  color: red; /* Atur warna sesuai keinginan Anda */
+  margin-top: 5px;
+  width: 145%;
+}
+/* CSS untuk input di formulir chat */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  border: none;
+  border-bottom: 1px solid #ccc; /* Tambahkan garis bawah */
+  width: 145%;
+  padding: 10px;
+  margin-bottom: 0px;
+  margin-top:20px;
+  font-size: 12px;
+  outline: none; /* Hapus garis fokus saat diklik */
+  margin-left: -45px;
+}
+
+
+
+/* Hapus gaya bawaan input number yang berupa spinner */
+input[type="tel"]::-webkit-inner-spin-button,
+input[type="tel"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Styling untuk tombol "Connect" */
+.connect-button {
+  background-color: #002D72;
+  margin-top: 35px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.connect-button:hover {
+  background-color:  #78D64B  ;
+}
+
+
+/* Tambahkan CSS berikut ke file Anda untuk mengatur tampilan chatbot */
+/* CSS untuk mengatur ukuran teks dalam komponen chatbot */
+.chatbot-messages {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.message {
+  display: flex;
+  margin: 5px;
+  font-size: 8px; 
+}
+
+.user-message {
+  background-color: #002D72;
+  border-radius: 5px;
+  font-size: 9px;
+  position: relative;
+  padding: 10px;
+  margin-left: auto;
+  color: white;
+  font-size: 12px; /* Atur ukuran teks sesuai kebutuhan Anda */
+  font-family: "Neo Sans Std Regular";
+}
+
+.bot-message {
+  display: flex;
+  align-items: flex-end; /* Menyusun gambar chatbot ke atas */
+  font-size:8px; 
+  text-align: justify;
+}
+
+.bot-profile img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: -15px;
+}
+
+.bot-text {
+  background-color: #e0e0e0;
+  color: #000000;
+  border-radius: 5px;
+  padding: 10px;
+  word-break: break-word;
+  font-size: 12px; /* Atur ukuran teks sesuai kebutuhan Anda */
+  font-family: "Neo Sans Std Regular";
+}
+/* CSS */
+.dolphin-btn-cards {
+  margin-top: 20px;
+  display: flex;
+  overflow-x: auto;
+  font-size: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Sesuaikan padding sesuai kebutuhan */
+  scrollbar-width: thin; /* Untuk Firefox */
+  scrollbar-color: transparent transparent; /* Untuk Firefox */
+  -ms-overflow-style: none; /* Untuk Internet Explorer dan Microsoft Edge */
+  z-index: 1;
+  }
+
+  
+.dolphin-btn-cards::-webkit-scrollbar {
+  width: 0.1rem; /* Sesuaikan lebar scrollbar sesuai kebutuhan */
+}
+
+.dolphin-btn-cards__item {
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  margin: 2px;
+  padding: 10px;
+  border: 2px solid #78D64B;
+  border-radius: 25px;
+  width: 100px;
+  background-color: #fff;
+  flex: 0 0 auto; /* Tambahkan flex untuk item agar dapat dirender dalam satu baris */
+  scroll-snap-align: start; /* Mengatur snap alignment ke awal elemen */
+}
+
+
+.subcategory-buttons {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column; /* Mengatur tata letak vertikal untuk subkategori */
+  font-size: 10px;
+  font-family: "Neo Sans Std Regular", sans-serif;
+  justify-content: center; /* Center the items vertically */
+  align-items: center; /* Center the items horizontally */
+  margin: 0 auto;
+}
+
+.category-image {
+  text-align: center; /* Center the content horizontally */
+}
+
+.category-image img {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.category-text {
+  margin-top: 5px;
+  margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+/* Tambahkan border pada semua subkategori */
+.subcategory-card {
+  margin-top: 2px;
+  margin-bottom: 2px; /* Adjust the margin as needed */
+  border: 2px solid #78D64B;/* Ganti yourDefaultBorderColor dengan warna default yang diinginkan */
+  padding: 2px;
+  border-radius: 5px;
+  width: 80px; /* Atur lebar subkategori card sesuai kebutuhan */
+  height: 10px; /* Atur tinggi subkategori card sesuai kebutuhan */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tambahkan border pada subkategori yang terpilih */
+.subcategory-card[selectedSubcategory] {
+  border: 2px solid; /* Ganti yourSelectedBorderColor dengan warna yang diinginkan untuk subkategori terpilih */
+}
+
+.bot-message {
+  position: relative;
+  padding: 10px;
+  align-items: flex-end;
+}
+
+.user-timestamp{
+  position: absolute;
+  right: 0px; /* Sesuaikan jarak dari sisi kanan sesuai kebutuhan */
+  bottom: -20px; /* Sesuaikan jarak dari bawah sesuai kebutuhan */
+  top: 25px; /* Sesuaikan jarak dari atas sesuai kebutuhan */
+}
+
+.bot-timestamp {
+  position: absolute;
+  margin-left: 40px;
+  margin-bottom: -15px;
+}
+
+.chatbot-input-container {
+  position: fixed;
+  bottom: -10px;
+  padding: 10px; /* Sesuaikan dengan kebutuhan */
+  margin: 0 auto;
+  right: 0px;
+  left: 910px;
+  border-radius: 15px;
+}
+
+.chatbot-input {
+  display: flex;
+  background-color: #D9D9D9;
+  width: 290px; 
+  bottom: 0px;
+  margin: 0 auto;
+  border-radius: 0 0 15px 15px;
+}
+
+.chatbot-input input {
+
+  flex: 1;
+  background-color: #D9D9D9;
+  border: none;
+  outline: none; /* Menghilangkan outline yang muncul saat elemen mendapatkan fokus */
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.chatbot-input button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 20px;
+  background-color: #002D72;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  width: 35px;
+  height: 32px;
+  cursor: pointer;
+  outline: none;
+}
+
+.indicator-message .bot-text::after {
+  content: '...';
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: typing 1.5s steps(3, end) infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 1.5em; }
+}
+
+.ask-beva-button {
+  background-color: #4CAF50; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  padding: 6px 8px; /* Padding tombol */
+  font-size: 10px; /* Ukuran teks */
+  border: none; /* Menghilangkan garis batas */
+  border-radius: 15px; /* Radius sudut */
+  cursor: pointer; /* Menunjukkan bahwa ini adalah elemen yang dapat diklik */
+  width: 60px;
+  text-align: center;
+  margin: 5px auto;
+}
+
+/* Efek hover untuk tombol */
+.ask-beva-button:hover {
+  background-color: #45a049; /* Warna latar belakang saat dihover */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(3px); }
+}
+
+/* Terapkan animasi ke elemen dengan class "typing-indicator" */
+.typing-indicator {
+  display: inline-block;
+  animation: shake 0.5s infinite; /* Gunakan animasi selama 0.5 detik dan ulangi tanpa batas */
+}
+
+.chatbot-messages::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: 9998; /* Place it below the feedback popup */
+  display: none;
+}
+
+/* Show the dim background when the feedback popup is open */
+.feedback-popup-open .chatbot-messages::after {
+  display: block;
+}
+
+.feedback-popup {
+  position: absolute; /* Ganti fixed menjadi absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  text-align: center;
+}
+
+
+.feedback-popup p {
+  font-family: "Neo Sans Std Regular", sans-serif;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+.feedback-popup div {
+  margin-bottom: 20px;
+}
+
+.feedback-popup span {
+  font-size: 2em;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.feedback-popup span.selected {
+  color: #ffcc00; /* Warna bintang yang dipilih */
+}
+
+.feedback-popup button {
+  font-family: "Neo Sans Std Bold", sans-serif;
+  background-color: #002D72;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.feedback-popup a {
+  color: #78D64B  ; /* Warna hijau */
+  font-family: "Neo Sans Std Bold", sans-serif;
+  text-decoration: none; /* Tidak ada garis bawah */
+}
+
+/* Tambahkan gaya untuk tautan di hover */
+.feedback-popup a:hover {
+  text-decoration: underline; /* Garis bawah saat dihover */
+  color:#002D72;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Warna hitam dengan tingkat transparansi 0.5 */
+  z-index: 9998; /* Letakkan elemen di atas pop-up */
+  bottom: 25px;
+}
+
+/* Terapkan animasi untuk efek fade pada overlay */
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0; /* Mulai dengan keadaan tidak terlihat (transparan) */
+  }
+  to {
+    opacity: 1; /* Akhiri dengan keadaan terlihat (opak) */
+  }
+}
+
+/* Terapkan animasi ke elemen overlay */
+.overlay {
+  animation: fadeInOverlay 0.5s ease-in-out; /* Gantilah 0.5s dengan durasi yang diinginkan */
+}
+
+.feedback-overlay {
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Warna hitam dengan opasitas 0.5 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 9999;
+  border-radius: 14px;
+}
+
+.feedback-popup span.selected {
+  color: gold;
+  text-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
+}
+
+.loading-overlay {
+  padding: 20px;
+  position: fixed;
+  width: 250px;
+  height: 400px;
+  margin: 0 auto;
+  left: 930px;
+  right: 20px;
+  bottom: 0px;
+  background: #00C7B1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1007; /* Atur nilai z-index menjadi lebih tinggi dari elemen beva-card */
+  border-radius: 15px;
+}
+
+
+
+.loading-image {
+  width: 150px; /* Sesuaikan ukuran gambar pemuatan sesuai kebutuhan */
+  height: 150px;
+  margin-bottom: 10px; /* Jarak antara gambar dan teks */
+}
+
+/* Tambahkan gaya untuk area rekomendasi */
+/* Tambahkan gaya untuk area rekomendasi */
+.follow-up-intents-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  font-size: 7px;
+}
+
+/* Tambahkan gaya untuk setiap rekomendasi */
+.follow-up-intent {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 8px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.follow-up-intent:hover {
+    background-color: #2980b9;
+}
+
